@@ -1,0 +1,47 @@
+/*
+============================================
+; Title:  Discussion 5.2 - ES5 Built-In Functions
+; Author: Alan Edwards
+; Date:   13 January 2019
+; Modified By: N/A
+; Description: Arrays.
+;===========================================
+*/
+
+const header = require("./edwards-header");
+
+/**
+* Params: firstName, lastName, assignment
+* Response: output 
+* Description: Returns a well-formatted string header
+*/
+console.log(header.display("Alan", "Edwards", "Assignment 5.1") + "\n");
+
+/*
+  Expected output:
+
+  FirstName LastName
+  Assignment 5.2 
+  Today's Date
+  
+  Veggies
+  Pork
+  Chicken
+  Steak
+  Fish
+  
+  */
+  
+  //start program
+
+var foods = ["Veggies", "Pork", "Chicken", "Steak", "Fish"];
+    
+  //iterate over the array
+
+foods.forEach(function(food) {
+              console.log(food)
+              });
+
+
+//end program
+
