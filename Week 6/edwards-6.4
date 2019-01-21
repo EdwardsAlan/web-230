@@ -1,0 +1,18 @@
+
+// creating object with nested object
+var ticket = {
+    id:101,
+    name:"Ticket",
+    dateCreated: new Date().toLocaleDateString('en-US'),
+    priority:"High",
+
+    person:{
+      id:1103,
+      firstName:"Bob",
+      lastName:"Jones",
+      jobTitle:"Programmer I"
+    }
+}
+
+//outputting nested object property using dot notation.
+console.log(ticket.name +" " + ticket.id + " was created on " + ticket.dateCreated + " and assigned to " + ticket.person.firstName + " " + ticket.person.lastName + " (" + ticket.person.jobTitle + ").")
