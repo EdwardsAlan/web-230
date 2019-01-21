@@ -1,0 +1,30 @@
+
+/*
+============================================
+; Title:  Assignment 6.2
+; Author: Alan Edwards
+; Date:   18 January 2019
+; Description: The try,catch,and finally block. 
+;===========================================
+*/
+
+
+console.log('\n')
+// creating my try block
+try {
+    var x=20;
+    var y=2;
+    var sum = x + y;
+
+// creating an exception
+    if (sum%1===0)
+    throw "NumberException"
+    console.log(sum)
+
+    //catching the error in my catch clause
+} catch(err){
+    console.log("Catch Clause: " + err)
+}
+finally {
+    console.log("Finally clause reached ...");
+}
