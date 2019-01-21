@@ -1,0 +1,52 @@
+/*
+  Expected output:
+  Alan Edwards
+  Exercise 5.3
+  January 13 2019
+  
+  -- COMPOSERS --
+  Last Name: Beethoven, Genre: Classical, Rating: 8
+  Last Name: Mozart, Genre: Classical, Rating: 10
+  Last Name: Bach, Genre: Classical, Rating: 9
+  Last Name: Haydn, Genre: Classical, Rating: 6
+  Last Name: Schubert, Genre: Classical, Rating: 5
+*/
+
+//start program
+
+var composers =[
+    {
+        LastName: "Beethoven",
+        Genre:"Classical",
+        Rating: 8
+    },
+    {
+        LastName:"Mozrt",
+        Genre:"Classical",
+        Rating: 10
+    },
+    {
+        LastName:"Bach",
+        Genre:"Classical",
+        Rating: 9
+    },
+    {
+        LastName:"Haydn",
+        Genre:"Classical",
+        Rating: 6
+    },
+    {
+        LastName:"Schubert",
+        Genre:"Classical",
+        Rating: 5
+    }
+    
+];
+
+composers.forEach(function(composer){
+    console.log(
+        "Last Name: " + composer.LastName + ", Genre " + composer.Genre + ", Rating: " + composer.Rating
+    );
+})
+
+//end program
